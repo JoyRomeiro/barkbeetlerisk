@@ -48,9 +48,7 @@ NOTE: In order to be able to run the script, save the script and the files in th
 --------------------------------------------------------
 DATA-SPECIFIC INFORMATION FOR: processing.R:
 --------------------------------------------------------
-### Contextual Information:
-
-<The script will generate the following outputs:>
+### The script will generate the following outputs:
 
 - summary_table_1: This table summarizes rotation differences and NPV gains by host character and density character. It aggregates the data and provides mean, minimum, and maximum values for rotation differences and NPV gains, grouped by these characteristics. The table is ordered by density character and host character.
 - summary_table_2: Similar to summary_table_1, but this table focuses on the aggregation by age character (whether the stands are "old" or "young"). It also provides mean, minimum, and maximum values for rotation differences and NPV gains, grouped by age character.
@@ -84,8 +82,6 @@ DATA-SPECIFIC INFORMATION FOR: Standsforsimulation_new_2702.xlsx
 DATA-SPECIFIC INFORMATION FOR: Data_risk_27022023_schedules.csv
 -----------------------------------------
 ### Table explanation
-
-<>
 
 - stand: Identifier for a specific stands (300 in total)
 - schedule: Identifier for treatments.
