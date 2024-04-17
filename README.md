@@ -45,71 +45,69 @@ NOTE: In order to be able to run the script, save the script and the files in th
 DATA-SPECIFIC INFORMATION FOR: processing.R:
 --------------------------------------------------------
 // Contextual Information:
-<The script will estimate:>
-
-pbb: Probability of bark beetle per plot
-SMI:Soil Moisture Index
-iBB: Damage Intensity
-iBB_m3_ha: Damage Intensity in cubic meter per hectare (done only for NNFI.csv)
-risk: Risk of bark beetle damage
-risk_m3_ha: Risk of bark beetle damage in cubic meter per hectare (done only for NNFI.csv)
-
 
 <The script will generate the following outputs:>
 
-- CM5_CCLM_output.csv: same as CM5_CCLM.csv but the estimated 
-- DMI_HIRHAM5_output.csv: same as DMI_HIRHAM5.csv, but the estimated pbb, SMI, iBB, risk are added at the end of the table
-- EARTH_CCLM_output.csv: same as EARTH_CCLM.csv, but the estimated pbb, SMI, iBB, risk are added at the end of the table
-- KNMI_RACMO_output.csv: same as KNMI_RACMO.csv, but the estimated pbb, SMI, iBB, risk are added at the end of the table
-- MPI_CCLM_output.csv: same as MPI_CCLM.csv, but the estimated pbb, SMI, iBB, risk are added at the end of the table
-- NFI_output.csv: same as NNFI.csv, but the estimated pbb, SMI, iBB, risk, iBB_m3_ha, risk_m3_ha are added at the end of the table
-- boxplots for each climate model with pbb
+- summary_table_1: This table summarizes rotation differences and NPV gains by host character and density character. It aggregates the data and provides mean, minimum, and maximum values for rotation differences and NPV gains, grouped by these characteristics. The table is ordered by density character and host character.
+- summary_table_2: Similar to summary_table_1, but this table focuses on the aggregation by age character (whether the stands are "old" or "young"). It also provides mean, minimum, and maximum values for rotation differences and NPV gains, grouped by age character.
+- summary_table_3: This table aggregates rotation differences and NPV gains by site index (si). It provides mean, minimum, and maximum values for these metrics, grouped by site index.
+- max_schedules_aggregated: This table provides aggregated values for NPV gain and rotation differences across a range of environmental conditions (temperature, precipitation) and stand characteristics (host character, density, age). It serves as a high-level view of how these factors interact under different scenarios.
+- NPV gain (NOK) figure: This plot visualizes the Net Present Value (NPV) gain across different temperature and precipitation scenarios, faceted by host character, density character, and age character.
+- Rotation Difference figure: This plot shows the rotation differences across the same environmental scenarios as the NPV gain figure, also faceted by host character, density character, and age character. 
 
 -----------------------------------------
 DATA-SPECIFIC INFORMATION FOR: Standsforsimulation_new_2702.xlsx
 -----------------------------------------
 // Variable/Column List: 
-ID = Generic plot ID
-year = years used to make estimation of future climatic conditions (from 2006 to 2080) 
-mean_temp = mean annual temperature modeled with climate model CM5_CCLM
-annual_precip = annual precipitation modeled with climate model CM5_CCLM
-stand_age = generic stand age (set as 100 years old for all plots)
-host_share_categ = generic norway spruce (host) share (set as 100% for all plots)
-stock_density = generic stock density (set as 1 for all plots)
-host_share_dummy = parameter used in the probability model
-host_share_dummy_a = parameter used in the probability model
-host_share_dummy_b = parameter used in the probability model
+
+<columnlist:>
+
+- Stand no: Identifier for a specific stands (300 in total)
+- Site index spruce: Five different site index (SI) classes (productivities), i.e., SI class H40 = 23 m, 20 m, 17 m, 14 m and 11 m, where H40 is defined as the dominant height at 40 years breast height age
+- TT (yr): Initial stand age
+- Dominant height, main species (m): Indicates the average height of the tallest trees 
+- N/ha tot: Number of trees per hectare in total across all species present in the stand.
+- N/ha spruce: Number of spruce trees per hectare.
+- N/ha pine: Number of pine trees per hectare.
+- BA (m2/ha): Basal area per hectare. 
+- V (m3/ha): Volume per hectare, measured in cubic meters.
+- Density; High or low
+- S%: Density
+- Rel Density: Relative density
+- Host tree (%): Norway spruce share
+- Rel D mean: Mean relative density
+- Age mean: The average age of trees in the stand
 
 -----------------------------------------
 DATA-SPECIFIC INFORMATION FOR: Data_risk_27022023_schedules.csv
 -----------------------------------------
 
-stand: Identifier for a specific stand of trees.
-schedule: Schedule identifier for treatments or assessments.
-period: Time period in years for data recording.
-tpush: A code or flag related to operations (exact meaning not specified).
-stand_age: Age of the tree stand in years.
-d (cm): Diameter of the trees in centimeters.
-hDom (m): Height of the dominant trees in meters.
-h (m): Average height of trees in meters.
-S%: Possibly a density or spacing percentage.
-Stock_density: Density of the stock in the area.
-HS: Host share, possibly a measure of biodiversity or specific species prevalence.
-host_share_categ: Category of host share.
-n (/ha): Number of trees per hectare.
-n-G (/ha), n-F (/ha), n-B (/ha): Number of trees per hectare by category (G, F, B not specified).
-vol (m3/ha): Volume of wood per hectare in cubic meters.
-vol-G (m3/ha), vol-F (m3/ha), vol-B (m3/ha): Volume of wood per category.
-Treatment: Type of treatment applied.
-vol-treatment (m3/ha): Volume affected by treatment.
-price (kr/m3): Price per cubic meter of wood.
-cost-cutting (kr/m3): Cost of cutting per cubic meter.
-cost-transport (kr/m3): Cost of transportation per cubic meter.
-cost-total (kr/m3): Total cost per cubic meter.
-cost-regeneration (kr/ha): Cost of regenerating the stand per hectare.
-Regeneration: Indicates if there was regeneration (0 for no, other values might indicate yes).
-net cash flow (kr/ha): Net cash flow per hectare.
-NPV horizon: Net present value over a specific horizon.
-NPV cycle end (T0), NPV landvalue (T0), NPV cycle end, NPV landvalue, NPV total: Various measures of net present value.
-mean_temp: Mean annual temperature.
-annual_precip: Annual precipitation in millimeters.
+<columnlist:>
+
+- stand: Identifier for a specific stands (300 in total)
+- schedule: Identifier for treatments.
+- period: 12 periods of 5 years each.
+- stand_age: Age of the stand in years.
+- d (cm): Average diameter of the trees in centimeters.
+- hDom (m): Height of the dominant trees in meters.
+- h (m): Average height of trees in meters.
+- S%: Density.
+- Stock_density: Density of the stock in the area.
+- HS: Norway spruce share
+- host_share_categ: Category of host share (100, 50 or 10%).
+- n (/ha): Number of trees per hectare.
+- n-G (/ha), n-F (/ha), n-B (/ha): Number of trees per hectare by tree species.
+- vol (m3/ha): Volume of wood per hectare in cubic meters.
+- vol-G (m3/ha), vol-F (m3/ha), vol-B (m3/ha): Volume of wood per tree species.
+- Treatment: Type of treatment applied (7=final harvest).
+- vol-treatment (m3/ha): Volume affected by treatment.
+- price (kr/m3): Price per cubic meter of wood in NOK.
+- cost-cutting (kr/m3): Cost of cutting per cubic meter in NOK.
+- cost-transport (kr/m3): Cost of transportation per cubic meter in NOK.
+- cost-total (kr/m3): Total cost per cubic meter in NOK.
+- cost-regeneration (kr/ha): Cost of regenerating the stand per hectare in NOK.
+- Regeneration: Indicates if there was regeneration.
+- net cash flow (kr/ha): Net cash flow per hectare in NOK.
+- NPV total: Total Net Present Value
+- mean_temp: Mean annual temperature in degrees celsius.
+- annual_precip: Annual precipitation in millimeters.
