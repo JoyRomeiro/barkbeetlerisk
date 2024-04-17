@@ -32,7 +32,8 @@ The rising impact of the spruce bark beetle (Ips typographus L.) on Europe's for
 --------------------
 DATA & FILE OVERVIEW
 --------------------
-//File List: 
+### File List:
+
 <Scripts:>
 
 - processing.R: This script is the exact code used for the manuscript. Code run with the two datasets provided.
@@ -47,7 +48,7 @@ NOTE: In order to be able to run the script, save the script and the files in th
 --------------------------------------------------------
 DATA-SPECIFIC INFORMATION FOR: processing.R:
 --------------------------------------------------------
-// Contextual Information:
+### Contextual Information:
 
 <The script will generate the following outputs:>
 
@@ -61,9 +62,7 @@ DATA-SPECIFIC INFORMATION FOR: processing.R:
 -----------------------------------------
 DATA-SPECIFIC INFORMATION FOR: Standsforsimulation_new_2702.xlsx
 -----------------------------------------
-// Variable/Column List: 
-
-<>
+### Table explanation
 
 - Stand no: Identifier for a specific stands (300 in total)
 - Site index spruce: Five different site index (SI) classes (productivities), i.e., SI class H40 = 23 m, 20 m, 17 m, 14 m and 11 m, where H40 is defined as the dominant height at 40 years breast height age
@@ -84,6 +83,7 @@ DATA-SPECIFIC INFORMATION FOR: Standsforsimulation_new_2702.xlsx
 -----------------------------------------
 DATA-SPECIFIC INFORMATION FOR: Data_risk_27022023_schedules.csv
 -----------------------------------------
+### Table explanation
 
 <>
 
