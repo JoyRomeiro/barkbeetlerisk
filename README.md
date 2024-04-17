@@ -1,6 +1,6 @@
 # Bark beetle risk
 
-Romeiro et al. "Optimizing forest management in the face of bark beetle risk"
+Machado Nunes Romeiro et al. 2024 "Optimizing forest management in the face of bark beetle risk"
 
 This README file was generated on 17/04/2024 by Joyce Machado Nunes Romeiro.
 Last updated: 17/04/2024
