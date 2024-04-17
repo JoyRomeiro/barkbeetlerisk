@@ -1,4 +1,4 @@
-# bark beetle risk
+# Bark beetle risk
 
 Romeiro et al. "Optimizing forest management in the face of bark beetle risk"
 
@@ -9,20 +9,23 @@ Last updated: 17/04/2024
 -------------------
 GENERAL INFORMATION
 -------------------
+**DOI:** `XXXXXX`
 
-// DOI: XXXXXX
-// Contact Information
-     // Name: Joyce Machado Nunes Romeiro
-     // Institution: Norwagian University of Life Sciences
-     // Email: joyce.machado.nunes.romeiro@nmbu.no
-     // ORCID: https://orcid.org/0000-0002-7262-0458
-// Funding sources: the Norwegian Research Council through - the Climate Smart Forestry Norway project [NFR 302701]
+### Contact Information
+- **Name:** Joyce Machado Nunes Romeiro
+- **Institution:** Norwegian University of Life Sciences
+- **Email:** [joyce.machado.nunes.romeiro@nmbu.no](mailto:joyce.machado.nunes.romeiro@nmbu.no)
+- **ORCID:** [https://orcid.org/0000-0002-7262-0458](https://orcid.org/0000-0002-7262-0458)
 
-// Description of dataset: 
+### Funding
+This project has received funding from the Norwegian Research Council through the Climate Smart Forestry Norway project (NFR 302701).
+
+
+### Description of dataset: 
 
 This repository contains the hypothetical forest stands used for the manuscript "Optimizing forest management in the face of bark beetle risk" and the script used to analyze bark beetle effects on rotation length and NPV.
 
-Summary of the paper:
+### Summary of the paper:
 
 The rising impact of the spruce bark beetle (Ips typographus L.) on Europe's forests is becoming a major concern, with climate change intensifying the problem. This situation has sparked discussion across Europe about adopting new, adaptive forest management strategies to mitigate the economic impacts on the forestry sector. Despite this, some regions have yet to fully embrace long-term strategies against bark beetle outbreaks from a climate change perspective. In our study, we examined the effects of integrating bark beetle risk into forest management strategies, considering both current and future climate change scenarios. Our findings indicate that reducing rotation length of low density stands with a high proportion of Norway Spruce and situated in more productive sites yields substantial economic advantages. Particularly, regions with a history of bark beetle outbreaks, like Vestfold in Norway, stand to gain significantly from early harvesting. The economic gain from harvesting earlier in this region is projected to increase nearly tenfold over the next 50 years under climate change scenarios. Additionally, we recommend considering the use of mixed tree species within forests as another adaptation strategy, to enhance forest resilience against bark beetle infestations and other natural disturbances.
 
@@ -60,7 +63,7 @@ DATA-SPECIFIC INFORMATION FOR: Standsforsimulation_new_2702.xlsx
 -----------------------------------------
 // Variable/Column List: 
 
-<columnlist:>
+<>
 
 - Stand no: Identifier for a specific stands (300 in total)
 - Site index spruce: Five different site index (SI) classes (productivities), i.e., SI class H40 = 23 m, 20 m, 17 m, 14 m and 11 m, where H40 is defined as the dominant height at 40 years breast height age
@@ -82,7 +85,7 @@ DATA-SPECIFIC INFORMATION FOR: Standsforsimulation_new_2702.xlsx
 DATA-SPECIFIC INFORMATION FOR: Data_risk_27022023_schedules.csv
 -----------------------------------------
 
-<columnlist:>
+<>
 
 - stand: Identifier for a specific stands (300 in total)
 - schedule: Identifier for treatments.
