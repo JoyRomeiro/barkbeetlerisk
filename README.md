@@ -1,9 +1,9 @@
 # Bark beetle risk
 
-Machado Nunes Romeiro et al. 2024 "Optimizing forest management in the face of bark beetle risk"
+Romeiro et al. 2024 "Optimizing forest management in the face of bark beetle risk"
 
 This README file was generated on 17/04/2024 by Joyce Machado Nunes Romeiro.
-Last updated: 17/04/2024
+Last updated: 19/05/2025
 
 
 -------------------
@@ -12,9 +12,9 @@ GENERAL INFORMATION
 **DOI:** `XXXXXX`
 
 ### Contact Information
-- **Name:** Joyce Machado Nunes Romeiro
-- **Institution:** Norwegian University of Life Sciences
-- **Email:** [joyce.machado.nunes.romeiro@nmbu.no](mailto:joyce.machado.nunes.romeiro@nmbu.no)
+- **Name:** Joyce M N Romeiro
+- **Institution:** Norsk institutt for bioøkonomi (NIBIO)
+- **Email:** [joyce.romeiro@nibio.no](mailto:joyce.romeiro@nibio.no)
 - **ORCID:** [https://orcid.org/0000-0002-7262-0458](https://orcid.org/0000-0002-7262-0458)
 
 ### Funding
